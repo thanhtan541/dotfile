@@ -1,7 +1,7 @@
 " Douglas Black
 " Colors {{{
 syntax enable           " enable syntax processing
-colorscheme badwolf
+colorscheme cosmic_latte
 set termguicolors
 " }}}
 " Misc {{{
@@ -55,48 +55,16 @@ nnoremap <leader>s' viw<esc>a'<esc>hbi'<esc>el
 nnoremap <leader>s" viw<esc>a"<esc>hbi"<esc>el
 "=== visual mode ===
 vnoremap <leader>s' c''<esc>hp
-vnoremap <esc> <nop>
-vnoremap jk <esc>
+"vnoremap <esc> <nop>
+"vnoremap jk <esc>
 "=== insert mode ===
 inoremap <esc> <nop>
-inoremap jk <esc>
+inoremap jk <esc> 
 inoremap <leader>d <esc>ddi
 inoremap <leader>u <esc>viwUei<Right>
 " }}}
 " Abbreviations {{{
 iabbrev ntt Nguyen Thanh Tan
-" }}}
-" Autocommands {{{
-" python
-" html
-augroup filetype_html
-    autocmd FileType html nnoremap <buffer> <localleader>f Vatzfk 
-augroup END
-" python
-augroup filetype_python
-    autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
-augroup END
-" php
-augroup filetype_php
-    autocmd FileType php :iabbrev <buffer> die var_dump();die;
-augroup END
-" javascript
-augroup filetype_js
-    autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc> 
-augroup END
-" }}}
-" Vimscript file settings{{{
-augroup filetype_vim
-    autocmd!
-    autocmd FileType vim :iabbrev <buffer> lole <localleader
-augroup END
-"}}}
-" Bashscript file settings{{{
-augroup filetype_sh
-    autocmd!
-    autocmd BufNewFile *.sh normal! i#!/usr/bin/env bash
-    autocmd FileType sh nnoremap <buffer> <localleader>c I#<space><esc> 
-augroup END
 " }}}
 " Folding {{{
 "=== folding ===
