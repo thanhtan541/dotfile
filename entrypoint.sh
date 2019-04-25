@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-vimDir=$PWD/.vim
-targetVimDir=$HOME
+vimDir=$PWD/vim
+targetVimDir=$HOME/.vim
 
-vimrcDir=$vimDir/.vimrc
+vimrcDir=$vimDir/vimrc
 targetVimrc=$HOME/.vimrc
 
 if [ ! -f "$vimrcDir" ]; then
@@ -13,3 +13,5 @@ else
     ln -s "$vimrcDir" "$targetVimrc"
     ln -s "$vimDir" "$targetVimDir"
 fi
+
+echo 'Done'
