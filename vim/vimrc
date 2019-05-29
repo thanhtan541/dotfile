@@ -84,6 +84,10 @@ augroup END
 augroup filetype_js
     autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc> 
 augroup END
+" json
+augroup filetype_json
+    autocmd BufWritePre  *.json :call JsonBeautify()
+augroup END
 " }}}
 " Vimscript file settings{{{
 augroup filetype_vim
