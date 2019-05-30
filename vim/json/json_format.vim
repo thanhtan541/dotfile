@@ -1,4 +1,4 @@
 function JsonBeautify () 
-    echom "Format json..."
+    %!python -m json.tool
 endfunction
 
