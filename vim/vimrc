@@ -65,6 +65,7 @@ inoremap <leader>u <esc>viwUei<Right>
 " }}}
 " Abbreviations {{{
 iabbrev ntt Nguyen Thanh Tan
+iabbrev mymail thanhtan004100@gmail.com
 " }}}
 " Autocommands {{{
 " python
