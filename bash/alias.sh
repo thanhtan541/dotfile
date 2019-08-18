@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # Directory shortcut
+export PROJECT_GIT=/Users/Shared/development/dev-project
 alias contnetserv="cd $PROJECT_GIT/contentserv"
 alias todev="cd $PROJECT_GIT/.."
 alias toconfig="cd $PROJECT_GIT/../dev-config"
@@ -17,3 +18,10 @@ alias gs='git status'
 alias gf='git fetch'
 alias gl='git log'
 alias gc='git commit'
+# Postgres stuffs
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+#
+# Docker stuff
+alias dv="docker version"
+alias dn="docker network"
