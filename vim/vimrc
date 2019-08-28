@@ -46,6 +46,8 @@ let maplocalleader = "\\"
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 "source vim file
 nnoremap <leader>sv :source $MYVIMRC<cr>
+"search todo
+nnoremap <leader>ft /\/\/todo<cr>
 "=== normal mode ===
 nnoremap <leader>- ddp
 nnoremap <leader>_ ddkP
