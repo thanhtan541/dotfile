@@ -6,12 +6,16 @@ targetVimDir=$HOME/.vim
 vimrcDir=$vimDir/vimrc
 targetVimrc=$HOME/.vimrc
 
+bashDir=$PWD/bash/
+targetBashDir=$HOME/.local/bash
+
 if [ ! -f "$vimrcDir" ]; then
-    echo 'File not exist!'
+    echo 'File is not exist!'
 else
     echo 'Setting up ....'
-    ln -s "$vimrcDir" "$targetVimrc"
-    ln -s "$vimDir" "$targetVimDir"
+    ln -sF "$vimrcDir" "$targetVimrc"
+    ln -sF "$vimDir" "$targetVimDir"
+    ln -sF "$bashDir" "$targetBashDir"
 fi
 
 echo 'Done'
