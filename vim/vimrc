@@ -1,4 +1,6 @@
 " Douglas Black
+" Plugins manager
+execute pathogen#infect()
 " Colors {{{
 execute pathogen#infect()
 syntax enable           " enable syntax processing
