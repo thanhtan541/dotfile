@@ -1,4 +1,6 @@
 " Douglas Black
+" Plugins manager
+execute pathogen#infect()
 " Colors {{{
 syntax enable           " enable syntax processing
 colorscheme cosmic_latte
