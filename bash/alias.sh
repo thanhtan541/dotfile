@@ -25,3 +25,6 @@ alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 # Docker stuff
 alias dv="docker version"
 alias dn="docker network"
+#
+# Python stuff
+alias pyvirtualdir="cd /Users/tan/.local/share/virtualenvs"

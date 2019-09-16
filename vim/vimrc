@@ -1,5 +1,6 @@
 " Douglas Black
 " Colors {{{
+execute pathogen#infect()
 syntax enable           " enable syntax processing
 colorscheme cosmic_latte
 set termguicolors
