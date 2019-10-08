@@ -57,6 +57,7 @@ nnoremap <leader>d Yp
 nnoremap <leader>u viwU
 nnoremap <leader>s' viw<esc>a'<esc>hbi'<esc>el
 nnoremap <leader>s" viw<esc>a"<esc>hbi"<esc>el
+nnoremap <leader>b t<space>a<cr><esc>l
 "=== visual mode ===
 vnoremap <leader>s' c''<esc>hp
 "vnoremap <esc> <nop>
