@@ -1,0 +1,6 @@
+[submodule "vim/bundle/vim-shuffle"]
+	path = vim/bundle/vim-shuffle
+	url = https://github.com/thanhtan541/vim-shuffle.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
