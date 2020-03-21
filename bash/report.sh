@@ -6,3 +6,17 @@ function weather() {
 function bluetooth_device_battery() {
     ioreg -r -l -k "BatteryPercent" | grep -i battery
 }
+
+function show_os_info() {
+    unameOUT="$(uname -s)"
+    echo "$unameOUT"
+    if [ "$unameOut" = "Linux" ]; then
+        cat /etc/os-release
+    elif [ "$unameOut" = "Darwin" ]
+    then
+        sw_vers
+    else
+        echo "Something else"
+    fi
+}
+
