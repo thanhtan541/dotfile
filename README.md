@@ -9,4 +9,6 @@ $ git submodule update --init
 $ git config --global diff.submodule log
 # Update your submodules
 $ git submodule update --remote your_submodule(s)
+# setup everything
+$ sh setup.sh
 ```
