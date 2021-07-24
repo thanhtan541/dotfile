@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-vimDir=$PWD/vim
+vimDir=$PWD/vim/
 targetVimDir=$HOME/.vim
 
-vimrcDir=$vimDir/vimrc
+vimrcDir=$PWD/vim/vimrc
 targetVimrc=$HOME/.vimrc
 
 bashDir=$PWD/bash/
