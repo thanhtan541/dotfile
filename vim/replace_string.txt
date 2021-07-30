@@ -1,0 +1,2 @@
+" Format camelCase into snake_case
+s/\(\l\)\(\u\)/\1\_\l\2/gc
