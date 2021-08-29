@@ -15,7 +15,7 @@ else
     echo 'Setting up ....'
     ln -sF "$vimrcDir" "$targetVimrc"
     ln -sF "$vimDir" "$targetVimDir"
-    ln -sF "$bashDir/*.sh" "$targetBashDir"
+    ln -sF "$bashDir" "$targetBashDir"
 fi
 
 echo 'Done'
