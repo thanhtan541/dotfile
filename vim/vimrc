@@ -23,6 +23,7 @@ set autoindent
 " }}}
 " UI Layout {{{
 set number              " show line numbers
+set relativenumber
 set showcmd             " show command in bottom bar
 set cursorline        " highlight current line
 set wildmenu
@@ -44,6 +45,13 @@ nnoremap gV `[v`]
 let mapleader = ","
 let maplocalleader = "\\"
 "=== command ===
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+" jumplist mutation
+nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
+nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 "edit vim file
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 "source vim file
@@ -58,8 +66,13 @@ nnoremap <leader>u viwU
 nnoremap <leader>s' viw<esc>a'<esc>hbi'<esc>el
 nnoremap <leader>s" viw<esc>a"<esc>hbi"<esc>el
 nnoremap <leader>b t<space>a<cr><esc>l
+" plugin mapping
+nmap <leader>ss <Plug>(sortAndSplit)
+nmap <leader>sf <Plug>(sortAndFold)
+nmap <leader>so <Plug>(splitOnly)
 "=== visual mode ===
 vnoremap <leader>s' c''<esc>hp
+vnoremap <leader>ts :s/\(\l\)\(\u\)/\1\_\l\2/g<cr>
 "vnoremap <esc> <nop>
 "vnoremap jk <esc>
 "=== insert mode ===
@@ -67,6 +80,11 @@ inoremap <esc> <nop>
 inoremap jk <esc>
 inoremap <leader>d <esc>ddi
 inoremap <leader>u <esc>viwUei<Right>
+" mark a end of change and start new change
+inoremap , ,<c-g>u
+" Moving text
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 " }}}
 " Abbreviations {{{
 iabbrev ntt Nguyen Thanh Tan
