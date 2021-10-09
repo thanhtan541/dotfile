@@ -1,8 +1,0 @@
-Please delete string inside double quotes "String to be deleted"
-
-Please delete string inside double quotes "String to be deleted"
-Please delete string inside double quotes "to be deleted"
-
-Please delete string inside double quotes "String be deleted"
-
-Please delete string inside double quotes "String to be"
