@@ -2,3 +2,5 @@
 .DS_Store
 *.netrwhist
 *.swp
+/vim/.vim/autoload/plug.vim
+/vim/.vim/plugged
