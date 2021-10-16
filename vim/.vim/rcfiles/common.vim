@@ -46,7 +46,6 @@ nnoremap <leader>u viwU
 vnoremap <leader>s' c''<esc>hp
 vnoremap <leader>ts :s/\(\l\)\(\u\)/\1\_\l\2/g<cr>
 vnoremap <esc> <nop>
-vnoremap jk <esc>
 "=== insert mode ===
 inoremap <esc> <nop>
 inoremap jk <esc>
