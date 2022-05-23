@@ -14,8 +14,10 @@ date: 2022-05-16
     * am a
         * software developer
         * vim lover
+    * am from Commit Khong
 
-# Introduction: Me
+
+# Introduction: Topic
 
 # Vim: A Text File Editor
 
@@ -24,73 +26,39 @@ date: 2022-05-16
 It's likely that vim already pre-install in your os, or if it's not:
 
 ```bash
-git clone https://github.com/vim/vim.git
-cd vim/src
-make
+    git clone https://github.com/vim/vim.git
+    cd vim/src
+    make
 ```
 
 # Why?
 
-* I always try to 
-* I enjoy being close to the code and in the terminal
-* Markdown is simple to read and write
-* It lets human-readable slides live alongside code
-    * Presentations as code!
+* Development workflow
+* Mouse is redundent
+* Fun way to type syntax
+* It speaks the hunan-language when typing
+    * More intuitive than Nano :))
 
-# Why: Part 2.1 - MDP
+# Why: Part 2 - Examples
 
-Existing tools do similar things. E.g., [mdp](https://github.com/visit1985/mdp)
+For example, suppose I was doing some refactoring like remove some paramamters
+in a method
 
-```file
-path: examples/mdp.md
-lang: md
-```
+In normal, we have to use mouse to highlight the text we want to remove or
+set the cursor at the very end of string and keep hitting `delete` button.
+-> every action need us to corectly place the cursor a some position, which
+sometime it's not.
 
-```terminal15
-mdp --invert examples/mdp.md
-```
+With Vim, we have the ability to make everything just in place and efficiently
+in term of number of button we hit
 
-# Why: Part 2.2
+-> Basically:
 
-[patat](https://github.com/jaspervdj/patat) is another existing tool that
-presents markdown slides on the command-line:
-
-```file
-path: examples/patat.md
-lang: md
-```
-
-```terminal15
-patat examples/patat.md
-```
-
-# Why: Part 3
-
-I was asked on Twitter why I didn't use a browser-based tool:
-
-> Looks nice. Out of curiosity, any reason why you are not using remarkjs
-> except it runs in a terminal vs a browser?
-
-Although rendering Markdown can look much nicer using GUIs, I wanted to have
-it close to the code and to be able to seamlessly shift between
-
-* presenting concepts
-* displaying source code/CLI commands
-* interactively running commands
-
-# Why: Part 3 - Examples
-
-For example, suppose I was presenting on Flask and I wanted to show a minimal
-flask application running.
-
-It's easy enough to do this from other slide presentation tools, as long as
-you're fine with:
-
-* duplicating your source code in
-    * the slides themselves
-    * the actual code being run
-
-and
+* move the cursor into method parentheses.
+* hit `d` `i` `)` (or `(`)
+    * `d` means delete
+    * `i` means inside
+    * `)` means, yes `parentheses`
 
 * context switching between
     * running the program in a separate terminal
@@ -98,27 +66,6 @@ and
     * possibly pulling up an IDE to show/modify the actual source being run
 
 It gets complicated. I don't like complicated
-
-# Why: Part 3 - Flask Example
-
-Source
-
-```terminal7
-bash -c "TERM=xterm-256color vim --clean ./source/minimal_flask.py -c 'colors peachpuff | set number'"
-```
-
-Running
-
-```terminal6
-bash -c "FLASK_APP=./source/minimal_flask.py flask run --reload"
-```
-
-Python3 shell
-
-```terminal6
-python3
-```
-
 
 # Why: Part 4.1
 
@@ -241,36 +188,6 @@ python3
 
 ```terminal8
 python3
-```
-
-# Features: Builtin Extensions: File Loader
-
-~~~md
-```file
-path: 2019-12-20.md
-transform: grep -e "^# " | sort
-lines:
-  end: 10
-```
-~~~
-
-```file
-path: 2019-12-20.md
-lang: md
-transform: grep -e "^# " | sort
-lines:
-  end: 10
-```
-
-# Features: Contrib Extensions: QR Codes
-
-```file
-path: ./examples/lookatme_qrcode.md
-lang: md
-```
-
-```qrcode
-a
 ```
 
 # Summary
