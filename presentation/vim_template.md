@@ -2,8 +2,6 @@
 title: 'Vim: How it speak the human language'
 author: thanhtan - @thanthan541
 date: 2022-05-16
-extensions:
-  - image_ueberzug
 ---
 
 # Vim
@@ -40,6 +38,9 @@ make
 * Efficiency
 * It speaks the hunan-language when typing
     * More intuitive than Nano :))
+
+> Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code… Therefore, making it easy to read makes it easier to write.”
+― Robert C. Martin 
 
 # Why: Part 2 - Examples
 
