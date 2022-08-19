@@ -1,0 +1,32 @@
+Effort -> high (learning curve is extremely steep)
+Useful -> high (programmer)
+Ubitquious -> high (broadly used accross platform, vi-ish in many tools and platform)
+Productive -> hardly no -> we think more than we type
+
+So why?
+
+Fun thing can do with Vim:
+
+1 - Programming in your way of typing
+2 - Macro stuff
+3 - Better Navigation
+
+Cool features that other editor/ide does not have (yet).
+
+1 - Registers (multiple copies)
+2 - Time travel (earlier/later in command mode) 
+3 - Calculator builtin (Ctrl R = in insert mode)
+4 - Auto increments (Crtl A / Ctrl X)
+
+
+Scripts
+- Using tab to separate the slides
+
+
+Slides:
+1 - About me
+2 - TOC
+3 - Myths about Vim
+4 - Fun stuffs
+5 - Learning resource
+
