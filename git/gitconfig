@@ -1,0 +1,12 @@
+[includeIf "gitdir:~/devel/work/"]
+    path = ~/devel/work/.gitconfig
+
+[url "github-work:work-github-org-name/"]
+    insteadOf = git@github.com:work-github-org-name/
+
+[includeIf "gitdir:~/devel/personal/"]
+    path = ~/devel/personal/.gitconfig
+
+[url "github-personal:thanhtan541/"]
+    insteadOf = git@github.com:thanhtan541/
+
