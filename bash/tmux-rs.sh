@@ -8,17 +8,17 @@ while [ "$#" -gt 0 ]; do
 
     case "$curr" in
     "-b")
-        tmux neww -t rs: -n be_api -d -c "$HOME/devel/office/backend-api"
+        tmux neww -t rs: -n be_api -d -c "$HOME/devel/work/backend-api"
         ;;
     "-p")
-        tmux neww -t rs: -n pricing -d -c "$HOME/devel/office/pricing-microservice"
+        tmux neww -t rs: -n pricing -d -c "$HOME/devel/work/pricing-microservice"
         ;;
     "-f")
-        tmux neww -t rs: -n fe_bo -d -c "$HOME/devel/office/fe-backoffice"
-        tmux neww -t rs: -n fe_cb -d -c "$HOME/devel/office/fe-booking"
+        tmux neww -t rs: -n fe_bo -d -c "$HOME/devel/work/fe-backoffice"
+        tmux neww -t rs: -n fe_cb -d -c "$HOME/devel/work/fe-booking"
         ;;
     "-et")
-        tmux neww -t rs: -n e_t -d -c "$HOME/devel/office/email-templates"
+        tmux neww -t rs: -n e_t -d -c "$HOME/devel/work/email-templates"
         ;;
     *) echo "Unvailable command... $curr"
     esac
