@@ -5,3 +5,5 @@
 *.swo
 /vim/.vim/autoload/plug.vim
 /vim/.vim/plugged
+*~
+
