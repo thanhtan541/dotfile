@@ -14,6 +14,7 @@ packer.startup(function(use)
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
   use 'kyazdani42/nvim-web-devicons' -- File icons
+  use 'glepnir/lspsaga.nvim' -- LSP ui
   use 'hoob3rt/lualine.nvim' -- Status line
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'onsails/lspkind-nvim' -- Vscode-like pictograms
@@ -30,4 +31,6 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'akinsho/nvim-bufferline.lua'
+  use 'norcalli/nvim-colorizer.lua'
 end)
