@@ -20,3 +20,6 @@ function show_os_info() {
     fi
 }
 
+function show_dns_servers() {
+    scutil --dns | grep 'nameserver\[[0-9]*\]'
+}
