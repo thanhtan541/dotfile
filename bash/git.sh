@@ -5,6 +5,6 @@
 function git_cb () {
     ITEM_ID=$1
 
+    echo >&2 "Executing: git branch | grep $ITEM_ID | xargs git checkout"
     git branch | grep $ITEM_ID | xargs git checkout
 }
-

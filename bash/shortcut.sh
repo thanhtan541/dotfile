@@ -9,7 +9,13 @@ function edit() {
 }
 
 function init_solana_local() {
-    tmux split-window -h 'solana-test-validator' && \
-    tmux select-pane -t !
+    if [ -d "./tmp" ]; then
+        echo "Setting up test-ledger in tmp directory"
+
+        tmux split-window -h 'solana-test-validator -l ./tmp/test-ledger' && \
+        tmux select-pane -t !
+    else
+        echo "Please create tmp directory"
+    fi
 }
 
