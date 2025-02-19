@@ -29,3 +29,14 @@ function chrome_default() {
 function chrome_tan() {
     open -n -a "Google Chrome" --args --profile-directory="Profile 1"
 }
+
+# Tmux util for rust project
+
+# Hot reload to check syntax error while coding
+# without compiling
+function rust_watch() {
+    rust_command="cargo watch -s 'clear; cargo check --tests --color=always 2>&1 | head -40'"
+
+    tmux split-window -h $rust_command && \
+    tmux select-pane -t !
+}

@@ -8,3 +8,9 @@ function git_cb () {
     echo >&2 "Executing: git branch | grep $ITEM_ID | xargs git checkout"
     git branch | grep $ITEM_ID | xargs git checkout
 }
+
+# Commit changes with message
+# git [c]ommit [w]ith [m]essage
+function git_cwm () {
+    git commit -m "$1"
+}
